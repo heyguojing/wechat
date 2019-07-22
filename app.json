@@ -1,13 +1,45 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/about",
+    "pages/news/list",
+    "pages/news/details",
+    "pages/shop/list",
+    "pages/shop/details",
     "pages/logs/logs"
   ],
   "window": {
+    "navigationBarBackgroundColor": "#ea5404",
+    "navigationBarTitleText": "西婵微官网",
+    "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "backgroundColor":"#efefef"
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/list",
+        "text": "产品"
+      },
+      {
+        "pagePath": "pages/news/list",
+        "text": "新闻"
+      },
+      {
+        "pagePath": "pages/index/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx3d3136da7dd90e54"
+  ]
 }

@@ -13,6 +13,6 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view class="usermotto">
-    
+    <map bindmarkertap="markertap" longitude="104.047207" latitude="30.623424"></map>
   </view>
 </view>
