@@ -10,28 +10,36 @@
   ],
   "window": {
     "navigationBarBackgroundColor": "#ea5404",
-    "navigationBarTitleText": "西婵微官网",
+    "navigationBarTitleText": "微官网",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
-    "backgroundColor":"#efefef"
+    "backgroundColor": "#efefef"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "/img/home.png",
+        "selectedIconPath": "/img/home1.png"
       },
       {
         "pagePath": "pages/shop/list",
-        "text": "产品"
+        "text": "产品",
+        "iconPath": "/img/chanpin.png",
+        "selectedIconPath": "/img/chanpin1.png"
       },
       {
         "pagePath": "pages/news/list",
-        "text": "新闻"
+        "text": "新闻",
+        "iconPath": "/img/xinwen.png",
+        "selectedIconPath": "/img/xinwen1.png"
       },
       {
         "pagePath": "pages/index/about",
-        "text": "关于"
+        "text": "关于",
+        "iconPath": "/img/guanyu.png",
+        "selectedIconPath": "/img/guanyu1.png"
       }
     ]
   },
@@ -41,5 +49,6 @@
   },
   "navigateToMiniProgramAppIdList": [
     "wx3d3136da7dd90e54"
-  ]
+  ],
+  "sitemapLocation": "sitemap21.json"
 }

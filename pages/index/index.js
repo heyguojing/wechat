@@ -1,13 +1,22 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
-    motto: 'Hello World你好，我的第一个小程序',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    // top
+    indeximg:'aspectFit',
+    src:"/img/img1.jpg",
+    // banner
+    bannerImg: [
+      "/img/banner1.jpg",
+      "/img/banner2.jpg",
+      "/img/banner3.jpg",
+    ],
+    indicatorDots:true,
+    autoplay:true,
+    interval:3000,
+    duration:1000,
+    easingFunction:"easeInOutCubic"
   },
   //事件处理函数
   bindViewTap: function() {
