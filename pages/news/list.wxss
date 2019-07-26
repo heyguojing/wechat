@@ -1,1 +1,60 @@
 /* pages/news/list.wxss */
+.search {
+  height: 88rpx;
+  width: 100%;
+  padding: 0 30rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search .input {
+  width: 690rpx;
+  height: 56rpx;
+  background: #ff6666;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.search .icon {
+  background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-2fb94833aa.png) center no-repeat;
+  background-size: 100%;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.search .txt {
+  height: 42rpx;
+  line-height: 42rpx;
+  color: #fff;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+} 
+.banner{
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  clear: both;
+  margin-bottom: 15px;
+}
+.banner swiper{height: 100px;}
+.banner image{
+  width: 100%;
+  box-sizing: border-box;
+}
+/* list */
+.newsitem{width: 100%;margin: 0 auto;padding: 2px 5px;display:flex;flex-direction:row;box-sizing: border-box; position: relative;}
+.newsitem .newsitem-l{width: 80px;margin-right: 10px;}
+.newsitem .newsitem-l image{width: 100%;height: 113px;}
+.newsitem .newsitem-r{text-align: left;padding: 10px 0;}
+.newsitem .newsitem-r .newsitem-r-t{display: block; font-size: 14px;font-weight: bold;color: #000;margin-bottom: 15px;}
+.newsitem .newsitem-r .newsitem-r-t2 text{font-size: 12px;display: block;margin-bottom: 10px;}
+.newsitem .newsitem-r .newsitem-r-t2 text:nth-last-of-type(1){margin-bottom: 0px;}
+.newsitem .newsitem-abso{display: inline-block;background-color: #c99f6a;color: #fff;padding: 2px 6px;border-radius: 10px; position:absolute;right: 40px;bottom: 40px;font-size: 13px;}
+
+

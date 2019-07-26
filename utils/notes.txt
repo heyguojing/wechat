@@ -1,0 +1,4 @@
+display:flex 弹性布局
+flex-direction:row 让元素从左到右排列
+flex-direction:column 让元素从上到下排列
+box-sizing: border-box 如果你将一个元素的width设为100px,那么这100px会包含其它的border和padding，内容区的实际宽度会是width减去border + padding的计算值

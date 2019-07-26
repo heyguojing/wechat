@@ -1,13 +1,47 @@
 <!--index.wxml-->
+<view class="search">
+  <navigator url="/pages/search/search" class="input">
+    <image class="icon"></image>
+    <text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
+  </navigator>
+</view>
 <view class="container">
   <image mode="{{mode}}" src="{{src}}"></image>
 </view>
-<view>
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" next-margin="0px">
-    <block wx:for="{{bannerImg}}" wx:key="*this" >
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" interval="{{interval}}" duration="{{duration}}" easing-function="easingFunction">
+    <block wx:for="{{bannerImg}}" wx:key="*this">
       <swiper-item>
         <image src="{{item}}" class="slide-image" width="100%"></image>
       </swiper-item>
     </block>
   </swiper>
+  <button bindtap="changeIndicatorDots" class="change-dots">隐藏</button>
 </view>
+<view class="list">
+  <view class="con-t">
+    <image src="../../img/img2.jpg"></image>
+  </view>
+  <view class="con-b">
+    <text class="con-b-text">问渠那得清如许为有源头活水来</text>
+    <text class="con-b-text">锦瑟无端五十弦，一弦一柱思华年</text>
+  </view>
+</view> 
+<view class="list">
+  <view class="con-t">
+    <image src="../../img/img3.jpg"></image>
+  </view>
+  <view class="con-b">
+    <text class="con-b-text">浔阳江头夜送客，枫叶荻花秋瑟瑟</text>
+    <text class="con-b-text">主人下马客在船，举酒欲饮无管弦</text>
+  </view>
+</view> 
+<view class="list">
+  <view class="con-t">
+    <image src="../../img/img4.jpg"></image>
+  </view>
+  <view class="con-b">
+    <text class="con-b-text" selectable="true">自言本是京城女，家在虾蟆陵下住</text>
+    <text class="con-b-text">春江花朝秋月夜，往往取酒还独倾</text>
+  </view>
+</view> 

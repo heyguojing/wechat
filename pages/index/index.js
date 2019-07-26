@@ -10,13 +10,22 @@ Page({
     bannerImg: [
       "/img/banner1.jpg",
       "/img/banner2.jpg",
-      "/img/banner3.jpg",
+      "/img/banner3.jpg", 
+      "/img/banner4.jpg"
     ],
     indicatorDots:true,
     autoplay:true,
     interval:3000,
     duration:1000,
-    easingFunction:"easeInOutCubic"
+    easingFunction:"easeInOutCubic",
+    indicatorColor:"#ccc",
+    indicatorActiveColor:"#ea5404",
+    easingFunction:"linear"
+  },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -59,5 +68,17 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onReady: function () {
+    // 页面渲染完成
+  },
+  onShow: function () {
+    // 页面显示
+  },
+  onHide: function () {
+    // 页面隐藏
+  },
+  onUnload: function () {
+    // 页面关闭
   },
 })

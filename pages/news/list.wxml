@@ -1,2 +1,70 @@
 <!--pages/news/list.wxml-->
-<text>pages/news/list.wxml</text>
+<view class="newlist">
+  <view class="search">
+    <navigator url="/pages/search/search" class="input">
+      <image class="icon"></image>
+      <text class="txt">商品搜索</text>
+    </navigator>
+  </view>
+</view>
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" interval="{{interval}}" duration="{{duration}}" easing-function="easingFunction">
+    <block wx:for="{{bannerImg}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="newsitem">
+  <view class="newsitem-l">
+    <image src="../../img/list1.jpg"></image>
+  </view>
+  <view class="newsitem-r">
+    <text class="newsitem-r-t">游褒禅山记</text>
+    <view class="newsitem-r-t2">
+      <text>古人之观于天地</text>
+      <text>后世之谬其传而莫能名者</text>
+    </view>
+    <view class="newsitem-abso">阅读</view>
+  </view>
+</view>
+<view class="newsitem">
+  <view class="newsitem-l">
+    <image src="../../img/list2.jpg"></image>
+  </view>
+  <view class="newsitem-r">
+    <text class="newsitem-r-t">蜀道难</text>
+    <view class="newsitem-r-t2">
+      <text>噫吁嚱，危乎高哉！</text>
+      <text>蜀道之难，难于上青天！</text>
+    </view>
+    <view class="newsitem-abso">阅读</view>
+  </view>
+</view>
+<view class="newsitem">
+  <view class="newsitem-l">
+    <image src="../../img/list3.jpg"></image>
+  </view>
+  <view class="newsitem-r">
+    <text class="newsitem-r-t">登岳阳楼</text>
+    <view class="newsitem-r-t2">
+      <text>昔闻洞庭水，今上岳阳楼。</text>
+      <text>吴楚东南坼，乾坤日夜浮。</text>
+    </view>
+    <view class="newsitem-abso">阅读</view>
+  </view>
+</view>
+<view class="newsitem">
+  <view class="newsitem-l">
+    <image src="../../img/list4.jpg"></image>
+  </view>
+  <view class="newsitem-r">
+    <text class="newsitem-r-t">滕王阁序</text>
+    <view class="newsitem-r-t2">
+      <text>昔闻洞庭水，今上岳阳楼。</text>
+      <text>豫章故郡，洪都新府。星分翼轸，地</text>
+    </view>
+    <view class="newsitem-abso">阅读</view>
+  </view>
+</view>

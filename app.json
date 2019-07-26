@@ -6,7 +6,8 @@
     "pages/news/details",
     "pages/shop/list",
     "pages/shop/details",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/search/search"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ea5404",
